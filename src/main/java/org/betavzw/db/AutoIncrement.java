@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class AutoIncrement
 {
+
     public static void main( String[] args ) throws SQLException {
 
         Scanner scanner = new Scanner(System.in);
@@ -23,6 +24,7 @@ public class AutoIncrement
 
                 prep.setString(1, naam);
                 prep.executeUpdate();
+
 
                 try(ResultSet rs = prep.getGeneratedKeys()){
 
